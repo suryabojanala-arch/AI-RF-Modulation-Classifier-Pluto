@@ -11,8 +11,4 @@ data/RadioML2016_mid.mat
 *.pkl
 *.xlsx
 
-# Videos and OS files
-*.mp4
-Thumbs.db
-desktop.ini
-.DS_Store
+
