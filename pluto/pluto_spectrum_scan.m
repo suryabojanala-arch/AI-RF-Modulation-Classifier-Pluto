@@ -94,9 +94,9 @@ title('Radio signals around us: ADALM-Pluto scan, 325 MHz - 3.8 GHz');
 xlim([fStart fStop]/1e6);
 outDir = fullfile(cfg.projectDir, 'results');
 if ~isfolder(outDir), mkdir(outDir); end
-exportgraphics(f, fullfile(outDir, '15_spectrum_scan_nearby_signals.png'), 'Resolution', 150);
+exportgraphics(f, fullfile(outDir, 'spectrum_scan.png'), 'Resolution', 150);
 save(fullfile(cfg.projectDir, 'data', 'spectrum_scan.mat'), 'freqs', 'psd', 'floorDb', 'sig');
-fprintf('\nSaved the plot to Results_Photos and the data to spectrum_scan.mat\n');
+fprintf('\nSaved the plot to results and the data to data/spectrum_scan.mat\n');
 
 function name = bandName(f)
 % Common bands in India (downlink = what a phone receives from the tower)
