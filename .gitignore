@@ -6,7 +6,7 @@ slprj/
 codegen/
 *.mex*
 
-# Large dataset files (download separately, see README)
+# Large dataset 
 data/RadioML2016_mid.mat
 *.pkl
 *.xlsx
